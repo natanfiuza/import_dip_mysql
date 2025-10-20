@@ -1,0 +1,117 @@
+# ==============================================================================
+# **Arquivo .gitignore Padrão para Projetos Python**
+# **Este arquivo especifica arquivos e diretórios que o Git deve ignorar.**
+# **Comentários começam com \#.**
+# ==============================================================================
+
+# **1. Arquivos de Cache e Bytecode do Python**
+# ------------------------------------------------------------------------------
+
+# **O Python gera esses arquivos automaticamente para otimizar a execução.**
+# **Eles não contêm código-fonte e devem ser ignorados.**
+
+pycache/  
+*.py[cod]  
+*$py.class
+
+# **2. Diretórios de Ambientes Virtuais (Virtual Environments)**
+# ------------------------------------------------------------------------------
+
+# **Estes diretórios contêm as dependências do projeto e o interpretador Python.**
+# **Cada desenvolvedor cria o seu próprio, por isso não devem ser versionados.**
+
+venv/  
+.venv/  
+env/  
+ENV/  
+env.bak/  
+venv.bak/
+
+# **3. Distribuição e Empacotamento**
+# ------------------------------------------------------------------------------
+
+# **Arquivos e pastas gerados ao construir ou empacotar o projeto.**
+# **Inclui a pasta 'build/' que você solicitou.**
+
+build/  
+dist/  
+downloads/  
+eggs/  
+.eggs/  
+lib/  
+lib64/  
+parts/  
+sdist/  
+var/  
+wheels/  
+*.egg-info/  
+.installed.cfg  
+*.egg
+
+# **4. Arquivos de Configuração de Editores e IDEs**
+# ------------------------------------------------------------------------------
+
+# **Evita que configurações pessoais de ambiente de desenvolvimento sejam**
+# **compartilhadas com outros colaboradores.**
+
+.idea/  
+.vscode/  
+*.sublime-project  
+*.sublime-workspace
+
+# **5. Arquivos de Testes e Cobertura de Código (Testing & Coverage)**
+# ------------------------------------------------------------------------------
+
+# **Arquivos e relatórios gerados por ferramentas de teste como pytest e coverage.**
+
+.pytest_cache/  
+.tox/  
+.coverage  
+.coverage.*  
+nosetests.xml  
+coverage.xml  
+htmlcov/  
+.hypothesis/
+
+# **6. Arquivos de Ambiente e Credenciais**
+# ------------------------------------------------------------------------------
+
+# **Arquivos que podem conter informações sensíveis como senhas e chaves de API.**
+# **É uma prática de segurança fundamental ignorá-los.**
+# **O arquivo .env.example, que serve como um modelo, PODE ser versionado.**
+
+.env  
+.env.*  
+!/.env.example
+
+# **7. Arquivos específicos do Sistema Operacional**
+# ------------------------------------------------------------------------------
+
+# **Arquivos de metadados gerados pelo macOS e Windows.**
+
+.DS_Store  
+Thumbs.db
+
+# **8. Logs e Bancos de Dados locais**
+# ------------------------------------------------------------------------------
+
+
+*.log  
+*.db  
+*.sqlite3
+
+# **9. Arquivos e pastas de uso do programa**
+# ------------------------------------------------------------------------------
+
+# **Arquivos que são usados pelos scripts para a sua utilização.**
+
+data/
+output/
+results/    
+logs/
+temp/
+tmp/
+
+# **10. Outros arquivos e pastas comuns a ignorar**
+# ------------------------------------------------------------------------------
+Pipfile.lock
